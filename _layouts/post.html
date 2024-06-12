@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+<main class="container mt-5" style="max-width: 960px;">
+<article class="blog-post">
+  <h2 class="display-5 mb-1 text-center">{{ page.title }}</h2>
+    <p class="blog-post-meta text-center"><small>on: {{ page.date | date_to_string }}</small></p>
+
+    {{ content }}
+
+</article>
+</main>

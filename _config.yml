@@ -1,0 +1,15 @@
+url: "https://epiccraft.community"
+title: "EpicCraft Community"
+slogan: "De weblog van Marc ook wel Gekke Groninger genoemd!"
+description: "De weblog van Marc ook wel Gekke Groninger genoemd!"
+permalink: /posts/:title:output_ext
+year: 2024
+
+navigation:
+  - title: Home
+    url: /
+  - title: Archief
+    url: /posts/
+
+plugins:
+  - jekyll-sitemap
