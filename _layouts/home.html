@@ -2,27 +2,17 @@
 layout: base
 ---
 
-<!-- start welkom titel -->
-<div class="p-4 p-md-5 mb-4">
-  <div class="row flex-lg-row-reverse align-items-center">
-      <div class="mySlides col-10 col-sm-8 col-lg-6">
-        <img src="{{ '/assets/img/2017-12-04_18.03.51.png' | absolute_url }}" width="300px" class="rounded d-block mx-lg-auto img-fluid" alt="{{ site.title }}" loading="lazy">
-      </div>
-      <div class="mySlides col-10 col-sm-8 col-lg-6">
-        <img src="{{ '/assets/img/2019-09-04_19.54.03.png' | absolute_url }}" width="300px" class="rounded d-block mx-lg-auto img-fluid" alt="{{ site.title }}" loading="lazy">
-      </div>
-      <div class="mySlides col-10 col-sm-8 col-lg-6">
-        <img src="{{ '/assets/img/ets2_20220108_002225_00.png' | absolute_url }}" width="300px" class="rounded d-block mx-lg-auto img-fluid" alt="{{ site.title }}" loading="lazy">
-      </div>
-      <div class="col-lg-6 ps-5">
-        <h1 class="display-4 text-center fst-italic">{{ site.title }}</h1>
-          
-          <p>{{ site.slogan }}</p>
-          
-          <p class="text-center">{% for social in site.data.socials %}
-            <a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" href="{{ social.link }}" title="{{ social.title }}">{{ social.code }}</a>
-            {% endfor %}</p>
-      </div>
-    </div>
-</div>
+<!-- Header with image -->
+<header class="ec-home w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">EpicCraft<br>Community</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <a href="https://discord.epiccraft.nl" class="w3-btn w3-black w3-hover-red w3-round-xxlarge">Discord</a>
+  </div>
+</header>
+
 <!-- end welkom titel -->

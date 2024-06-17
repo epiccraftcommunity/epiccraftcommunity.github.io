@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  height: 100%;
   font-family: "Nanum Pen Script", cursive;
   font-size: 120%;
 }
@@ -87,13 +88,6 @@ hr {
   margin:0 0 20px;
 }
 
-.ec-header {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('../img/bg-ec.jpg');
-}
-
 .ec-nav {
   background-color: #20295b !important;
   color: #fff !important;
@@ -107,6 +101,14 @@ hr {
 .w3-bar-item:hover {
   background-color: #6271c8 !important;
   color: #fff !important;
+}
+
+.ec-home {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/2019-09-04_19.54.03.png');
+  min-height: 75%;
 }
 
 .w3-theme-l5 {color:#000 !important; background-color:#f3f4fb !important}

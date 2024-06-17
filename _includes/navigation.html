@@ -1,38 +1,25 @@
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top" aria-label="Fourth navbar example">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="{{ '/' | absolute_url }}"><img src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ page.title }} {{ site.title }}" style="width:40px;" class="rounded-pill"></a>
-          <a class="navbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-              aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarsExample04">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                {% for nav in site.navigation %}
+<div class="w3-top">
+  <div class="w3-bar ec-nav w3-opacity w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/" class="w3-bar-item w3-button w3-padding-large">EpicCraft Community</a>
+
+    {% for nav in site.navigation %}
                 {% if nav.url contains "://" %}
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="{{ nav.url }}">{{ nav.title }}</a>
-                </li>
+                  <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="{{ nav.url }}">{{ nav.title }}</a>
                 {% else %}
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="{{ nav.url | absolute_url }}">{{ nav.title }}</a>
-                </li>
+                  <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="{{ nav.url | absolute_url }}">{{ nav.title }}</a>
                 {% endif %}
               {% endfor %}
-                  
-              </ul>
-              <a href="https://discord.marc.lol" class="btn btn-success">Join Discord!</a>&nbsp;
-              <li class="btn btn-danger dropdown">
-                  <a class="dropdown-toggle text-white" href="#" data-bs-toggle="dropdown"
-                          aria-expanded="false"  aria-label="Toggle theme (auto)"><i class="fa-regular fa-sun"></i></a>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                          <li><a class="dropdown-item" href="#" data-bs-theme-value="light" aria-pressed="false"><i class="fa-solid fa-sun"></i> Light</a></li>
-                          <li><a class="dropdown-item" href="#" data-bs-theme-value="dark" aria-pressed="false"><i class="fa-solid fa-moon"></i> Dark</a></li>
-                          <li><a class="dropdown-item" href="#" data-bs-theme-value="auto" aria-pressed="true"><i class="fa-solid fa-wand-magic-sparkles"></i> Auto</a></li>
-                      </ul>
-              </li>
-          </div>
-      </div>
-    </nav>
+    
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
