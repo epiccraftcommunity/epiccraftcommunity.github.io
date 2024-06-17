@@ -1,10 +1,6 @@
 ---
 layout: home
 title: Welcome
-type: test
-pagination: 
-  enabled: true
-  permalink: '/page/:num/'
 ---
 
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
